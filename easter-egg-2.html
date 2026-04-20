@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easter Egg 2</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff3a6; /* soft yellow */
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.75);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            max-width: 900px;
+        }
+
+        h1 {
+            color: #5a4a2a;
+            margin-bottom: 30px;
+        }
+
+        .images {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        /* 🌟 Image styling */
+        .images img {
+            height: auto;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        /* 🖼️ Image 1 (WIDER) */
+        .images img:first-child {
+            width: 450px;
+        }
+
+        /* 🖼️ Image 2 (SMALLER) */
+        .images img:last-child {
+            width: 300px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ff8fa3;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .back:hover {
+            background-color: #ff6f91;
+        }
+
+        /* 📱 Mobile responsiveness */
+        @media (max-width: 700px) {
+            .images img:first-child,
+            .images img:last-child {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>💛 Easter Egg 2</h1>
+
+        <div class="images">
+
+            <!-- 🖼️ IMAGE 1 (WIDER) -->
+            <img src="Images/hope1.PNG" alt="Memory 1">
+
+            <!-- 🖼️ IMAGE 2 -->
+            <img src="Images/hope2.PNG" alt="Memory 2">
+
+        </div>
+
+        <!-- 🔙 BACK BUTTON -->
+        <a class="back" href="page2.html">Back to Chapter</a>
+
+    </div>
+
+</body>
+</html>
